@@ -4,16 +4,16 @@ import java.util.Scanner;
 public class HelloWorld {
     public static void main(String args[]) {
 
-        int[] arr = new int[]{1, 2,3,3,7,8,4,5, 6,7, 8};
+            char[] name = "Ashiru".toCharArray();
 
-        for (int i = 0; i < arr.length; i++) {
-            int temp = arr[i];
+            String reversed_string = "";
+            for(int i=name.length-1; i>=0; i--) {
 
-            for(int k=i+1; k<arr.length; k++) {
-                if(arr[k]==temp) System.out.println(arr[k]);
+                reversed_string+=name[i];
             }
+            System.out.print(reversed_string);
 
-        }
+
     }
 
 }
