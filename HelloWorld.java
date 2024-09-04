@@ -4,24 +4,16 @@ import java.util.Scanner;
 public class HelloWorld {
     public static void main(String args[]) {
 
-        int[] arr = new int[] {-2,2,3,4,5,6,17, 98,43,343,45232};
+        int[] arr = new int[]{1, 2,3,3,7,8,4,5, 6,7, 8};
 
-        int max=arr[0], min=arr[0];
+        for (int i = 0; i < arr.length; i++) {
+            int temp = arr[i];
 
-        for(int i=0; i<=arr.length-1; i++) {
-            if(arr[i]>max) {
-                max = arr[i];
+            for(int k=i+1; k<arr.length; k++) {
+                if(arr[k]==temp) System.out.println(arr[k]);
             }
-          else if(arr[i]<=min) {
-              min = arr[i];
-            }
+
         }
-
-        System.out.print("max-value = "+max+" min-value = "+min);
-
-
-
-
-
     }
+
 }
