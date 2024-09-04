@@ -9,7 +9,7 @@ public class Student {
         System.out.print("Eating");
     }
 
-    public void Drinking() {
+    public  void Drinking() {
         System.out.print("Drinking");
     }
 

@@ -4,14 +4,15 @@ import java.util.Scanner;
 public class HelloWorld {
     public static void main(String args[]) {
 
-            char[] name = "Ashiru".toCharArray();
+       Student student1 = new Student();
 
-            String reversed_string = "";
-            for(int i=name.length-1; i>=0; i--) {
+       student1.age = 9;
+       student1.name = "Ashiru";
+       student1.color = "Black";
+       student1.sex = 'm';
 
-                reversed_string+=name[i];
-            }
-            System.out.print(reversed_string);
+
+     student1.Drinking();
 
 
     }
