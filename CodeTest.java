@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class CodeTest {
 
@@ -12,6 +13,12 @@ public class CodeTest {
 
         for(int i=0; i<arr.size(); i++) {
             System.out.print(arr.get(i));
+        }
+
+        Iterator<String> iterator = arr.iterator();
+
+        while(iterator.hasNext()) {
+            System.out.print(iterator.next());
         }
     }
 }
