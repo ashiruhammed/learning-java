@@ -8,17 +8,16 @@ public class AbstractClass {
 
 
     public static void main(String[] args) {
-       int result =  CalculatePower(2,3);
+       int result =  factorial(5);
        System.out.print(result);
     }
 
-    public static int CalculatePower(int x, int y){
+    public static int factorial(int x){
 
-        if(y==0) {
-            return x;
+        if(x==0) {
+            return 1;
         }else {
-            x*=x;
-            return CalculatePower(x,y-1);
+            return x * factorial(x-1);
         }
     }
 
