@@ -8,13 +8,18 @@ public class AbstractClass {
 
 
     public static void main(String[] args) {
-        HashMap<Integer, String> hasmAP  = new HashMap<>();
+       int result =  CalculatePower(2,3);
+       System.out.print(result);
+    }
 
-        hasmAP.put(1,"22");
-        hasmAP.put(2,"222");
-        hasmAP.put(3,"223");
+    public static int CalculatePower(int x, int y){
 
-        System.out.print(hasmAP);
+        if(y==0) {
+            return x;
+        }else {
+            x*=x;
+            return CalculatePower(x,y-1);
+        }
     }
 
 }
