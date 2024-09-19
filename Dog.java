@@ -1,6 +1,9 @@
 public class Dog{
-    static String Dog;
+    String Dog;
+    String Name;
 
-
-
+    public Dog(String dog, String name) {
+        Dog = dog;
+        Name = name;
+    }
 }
